@@ -1,82 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    android:padding="16dp"
+    android:background="@drawable/homebg"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/Ftext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Score: 0"
-        android:textColor="#000000"/>
-
-    <TextView
-        android:id="@+id/Stext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Question: 1/x"
-        android:textColor="#000000"
-        android:layout_below="@id/Ftext"/>
-
-    <TextView
-        android:id="@+id/Ttext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="00:30"
-        android:textSize="40sp"
-        android:textColor="#000000"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" />
-    
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ygvigggggggggggggggg\ngggggggggggggggggggg\ngggg"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:layout_above="@+id/Rdo"
-        android:layout_marginBottom="16dp"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        android:orientation="vertical"
+        android:padding="16dp" >
 
-    <RadioGroup
-        android:id="@+id/Rdo"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/fRd"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 1"/>
+            android:fontFamily="cursive"
+            android:text="Subject Name"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:layout_gravity="center"
+            android:textSize="50sp" />
 
-        <RadioButton
-            android:id="@+id/sRd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Option 2"/>
+        <Button
+            android:id="@+id/Eco1"
+            android:layout_width="372dp"
+            android:layout_height="106dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/button1"
+            android:text="Economic"
+            android:textAllCaps="false"
+            android:textColor="#28576C"
+            android:textSize="24sp"
+            android:typeface="serif" />
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="372dp"
+            android:layout_height="106dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/button2"
+            android:text="Calculate"
+            android:textAllCaps="false"
+            android:textColor="#757515"
+            android:textSize="24sp"
+            android:typeface="serif" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="372dp"
+            android:layout_height="106dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/button3"
+            android:text="Calculate"
+            android:textAllCaps="false"
+            android:textColor="#7A2488"
+            android:textSize="24sp"
+            android:typeface="serif" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Option 3"/>
 
-    </RadioGroup>
+    </LinearLayout>
 
-    <Button
-        android:layout_width="381dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/Rdo"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/button"
-        android:text="Confirm"
-        android:textAllCaps="false" />
-
-
-</RelativeLayout>
+</ScrollView>
